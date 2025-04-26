@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.custom-navbar {
+  background-color: #0b0b0b;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.navbar-logo img {
+  height: 70px;
+  width: 150px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e67e22 !important;
+}
+
+
+.book-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1051;
+  padding: 0;
+}
+
+.book-icon-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.book-icon-img:hover {
+  transform: scale(1.1);
+}
+.order-now-container {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: url('./assests/logo512.png') no-repeat center center/cover; */
+  min-height: 50vh;
+  color: #fff;
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff4b2b;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.order-btn {
+  background-color: #ff4b2b;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #ff3a1a;
+}
+
+/* Overlay Panel */
+.overlay-panel {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s ease;
+  z-index: 1000;
+}
+
+.overlay-panel.open {
+  left: 0;
+}
+
+.overlay-content {
+  background: #222;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  margin-top: 100px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ff4b2b;
+  cursor: pointer;
+}
+
+.form-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff4b2b;
+}
+
+.form-subtext {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.order-form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #ff4b2b;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ff3a1a;
+}
+/* src/pages/Menu.css */
+
+/* Card hover animation */
+.menu-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(255, 46, 46, 0.6);
+}
+
+/* Order Now button style */
+.order-button {
+  background-color: #e63535;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.order-button:hover {
+  background-color: #ff1c1c;
+  transform: scale(1.05);
+}
